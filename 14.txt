@@ -1,0 +1,22 @@
+class AnimalRegistry:
+    def __init__(self):
+        self.animals = []
+
+    def add_animal(self, animal):
+        self.animals.append(animal)
+
+    def list_commands(self, animal_name):
+        for animal in self.animals:
+            if animal.имя == animal_name:
+                return animal.команда
+        return "Животное не найдено."
+
+    def train_animal(self, animal_name, new_command):
+        for animal in self.animals:
+            if animal.имя == animal_name:
+                animal.команда = new_command
+
+# Пример использования
+registry = AnimalRegistry()
+registry.add_animal(ДомашниеЖивотные('Шарик', 'Сидеть', '2020-01-01'))
+print(registry.list_commands('Шарик'))  # Вывод: Сидеть

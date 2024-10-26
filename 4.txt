@@ -1,0 +1,5 @@
+# Установка deb-пакета (пример)
+sudo dpkg -i /home/yelzhan/final_work/package.deb
+
+# Удаление deb-пакета
+sudo dpkg -r package

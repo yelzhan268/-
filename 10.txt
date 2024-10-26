@@ -1,0 +1,6 @@
+DELETE FROM ВьючныеЖивотные WHERE имя = 'Камелот';
+
+CREATE TABLE ОбъединенныеЖивотные AS
+SELECT * FROM ВьючныеЖивотные
+UNION
+SELECT * FROM ДомашниеЖивотные;

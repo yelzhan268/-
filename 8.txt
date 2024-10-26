@@ -1,0 +1,13 @@
+CREATE TABLE ДомашниеЖивотные (
+   id INT PRIMARY KEY AUTO_INCREMENT,
+   имя VARCHAR(100),
+   команда VARCHAR(100),
+   дата_рождения DATE
+);
+
+CREATE TABLE ВьючныеЖивотные (
+   id INT PRIMARY KEY AUTO_INCREMENT,
+   имя VARCHAR(100),
+   команда VARCHAR(100),
+   дата_рождения DATE
+);

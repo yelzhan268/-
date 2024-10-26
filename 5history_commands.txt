@@ -1,0 +1,11 @@
+923  sudo apt update
+924  sudo apt install mysql-server
+925  echo -e "Собаки\nКошки\nХомяки" > Домашние_животные
+926  echo -e "Лошади\nВерблюды\nОслы" > Вьючные_животные
+927  cat Домашние_животные Вьючные_животные > Друзья_человека.txt
+928  cat Друзья_человека.txt
+929  mkdir Животные
+930  mv Друзья_человека.txt Животные/
+931  sudo dpkg -i /path/to/your/package.deb
+932 sudo dpkg -r имя_пакета
+933 history > history_commands.txt

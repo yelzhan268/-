@@ -1,0 +1,4 @@
+CREATE TABLE МолодыеЖивотные AS
+SELECT *, DATEDIFF(CURDATE(), дата_рождения)/365 AS возраст
+FROM ДомашниеЖивотные
+WHERE DATEDIFF(CURDATE(), дата_рождения)/365 < 3 AND DATEDIFF(CURDATE(), дата_рождения)/365 > 1;

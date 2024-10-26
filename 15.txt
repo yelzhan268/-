@@ -1,0 +1,15 @@
+class Counter:
+    def __init__(self):
+        self.count = 0
+
+    def add(self):
+        self.count += 1
+
+    def get_count(self):
+        return self.count
+
+# Пример с использованием try-with-resources
+with Counter() as c:
+    c.add()
+    c.add()
+    print(c.get_count())  # Вывод: 2
